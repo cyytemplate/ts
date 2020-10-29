@@ -1,21 +1,24 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "./dist",
-    "sourceMap": true,
-    "target": "esnext",
-    "module": "esnext",
+    "outDir": "lib",
+    "sourceMap": false,
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
+    "declaration": true,
     "noUnusedLocals": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "removeComments": false,
-    "lib": ["esnext"],
+    "removeComments": true,
     "types": ["jest", "node"],
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
   "include": [
     "src"
