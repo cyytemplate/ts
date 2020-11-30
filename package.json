@@ -2,7 +2,7 @@
   "name": "ts",
   "version": "1.0.0",
   "description": "typescript project template",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "author": "cyyjs",
   "license": "MIT",
   "scripts": {
@@ -10,6 +10,13 @@
     "lint": "eslint src --ext .ts --fix",
     "test": "jest"
   },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "types": "./lib/index.d.ts",
+  "files": ["lib"],
   "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
