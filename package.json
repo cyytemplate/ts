@@ -6,6 +6,7 @@
   "author": "cyyjs",
   "license": "MIT",
   "scripts": {
+    "prepublish": "yarn build",
     "build": "yarn lint && rollup -c",
     "lint": "eslint src --ext .ts --fix",
     "test": "jest"
